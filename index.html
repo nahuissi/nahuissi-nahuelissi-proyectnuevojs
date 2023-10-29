@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Catálogo de Libros</title>
     <link rel="stylesheet" href="estilos.css">
-    <title>Simulador Interactivo</title>
 </head>
 <body>
-    <h1>Simulador Interactivo</h1>
-    <h2>Lista de Tareas/Notas</h2>
-    <input type="text" id="nuevaTarea" placeholder="Nueva tarea">
-    <button id="agregarTarea">Agregar Tarea</button>
-    <ul id="listaTareas">
-    </ul>
+    <h1>Catálogo de Libros</h1>
+
+    <label for="bookSelect">Selecciona un libro:</label>
+    <select id="bookSelect"></select>
+
+    <div id="bookDetails">
+        <h2>Detalles del libro seleccionado</h2>
+        <p id="bookTitle"></p>
+        <p id="bookAuthor"></p>
+        <p id="bookGenre"></p>
+    </div>
 
     <script src="main.js"></script>
 </body>
